@@ -1,0 +1,32 @@
+.Overview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.overview-card {
+  background-color: #fef9c3;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overcard-left p {
+  margin: 0;
+}
+.overcard-left svg {
+  font-size: 25px;
+}
+.overcard-right p {
+  margin: 0;
+  background-color: #fefce8;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+}

@@ -1,0 +1,36 @@
+.Pnav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffd966;
+  display: none;
+}
+.Pnav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+  margin: 0;
+}
+.Pnav ul li {
+  display: flex;
+}
+.Pnav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.Pnav ul li a svg{
+  font-size: 25px;
+  color: black;
+}
+@media only screen and (max-width: 680px) {
+    .Pnav{
+        display: block;
+    }
+}
