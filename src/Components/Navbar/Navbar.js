@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css"
-import logo from "../../Assets/logo/logo.svg"
+import logo from "../../Assets/logo/logo-1500x400-white.png"
 import { FaRegCircleUser } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 

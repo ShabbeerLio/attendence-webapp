@@ -3,8 +3,9 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #ffd966;
+  background-color: #4c4a4a;
   display: none;
+  border-radius: 15px 15px 0 0;
 }
 .Pnav ul {
   display: flex;
@@ -22,12 +23,12 @@
   justify-content: center;
   flex-direction: column;
   text-decoration: none;
-  color: black;
+  color: white;
   cursor: pointer;
 }
 .Pnav ul li a svg{
   font-size: 25px;
-  color: black;
+  color: white;
 }
 @media only screen and (max-width: 990px) {
     .Pnav{
