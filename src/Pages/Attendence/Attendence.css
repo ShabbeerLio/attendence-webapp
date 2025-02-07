@@ -1,0 +1,22 @@
+.Attendence {
+  width: 100%;
+  height: 85%;
+  /* padding-bottom: 6rem; */
+}
+.Attendence-main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .Attendence-main {
+    max-width: 1080px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+}

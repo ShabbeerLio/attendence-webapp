@@ -4,7 +4,7 @@ html {
 
 body,
 #root {
-  height: 91vh;
+  height: 100vh;
   margin: 0;
   overflow: hidden;
   display: flex;
@@ -21,4 +21,15 @@ body,
 
 .app-container::-webkit-scrollbar {
   display: none; /* Hide scrollbar in Chrome, Safari */
+}
+
+@media only screen and (max-width: 990px) {
+  body,
+#root {
+  height: 91vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 }
