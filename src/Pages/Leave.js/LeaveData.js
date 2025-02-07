@@ -1,0 +1,58 @@
+const LeaveData = [
+  {
+    id: "001",
+    type: "Personal Leave",
+    status: "Approved",
+    start_time: "Feb 02 12:00 PM",
+    end_time: "Feb 05 12:00 PM",
+    approved_by: "Digital Dezire Web Solution",
+    request_time: "Feb 01 10:10 AM",
+  },
+  {
+    id: "002",
+    type: "Sick Leave",
+    status: "Rejected",
+    start_time: "Jan 15 09:00 AM",
+    end_time: "Jan 17 06:00 PM",
+    approved_by: "HR Department",
+    request_time: "Jan 14 08:30 AM",
+  },
+  {
+    id: "003",
+    type: "Casual Leave",
+    status: "Pending",
+    start_time: "Mar 10 10:00 AM",
+    end_time: "Mar 12 05:00 PM",
+    approved_by: "Pending Approval",
+    request_time: "Mar 09 11:45 AM",
+  },
+  {
+    id: "004",
+    type: "Vacation Leave",
+    status: "Approved",
+    start_time: "Apr 20 08:00 AM",
+    end_time: "Apr 25 07:00 PM",
+    approved_by: "Team Manager",
+    request_time: "Apr 15 09:20 AM",
+  },
+  {
+    id: "005",
+    type: "Emergency Leave",
+    status: "Rejected",
+    start_time: "May 05 07:30 AM",
+    end_time: "May 07 06:30 PM",
+    approved_by: "HR Manager",
+    request_time: "May 04 12:10 PM",
+  },
+  {
+    id: "006",
+    type: "Work From Home",
+    status: "Pending",
+    start_time: "Jun 12 09:00 AM",
+    end_time: "Jun 13 05:00 PM",
+    approved_by: "Pending Approval",
+    request_time: "Jun 11 02:50 PM",
+  },
+];
+
+export default LeaveData;

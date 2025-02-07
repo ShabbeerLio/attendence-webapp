@@ -1,7 +1,7 @@
 import React from "react";
 import "./Overview.css";
 import { GiCheckMark } from "react-icons/gi";
-import { LuPartyPopper,LuMessageSquareMore } from "react-icons/lu";
+import { LuPartyPopper, LuMessageSquareMore } from "react-icons/lu";
 import { MdOutlineSick } from "react-icons/md";
 import { GoTasklist } from "react-icons/go";
 import { BiTask } from "react-icons/bi";
@@ -20,10 +20,10 @@ const Overview = () => {
     ];
 
     return (
-        <div className="Overview">
+        <>
             {OverviewData.map((item) => (
-                <>
-                    <div className="overview-card">
+                <div className="Overview" key={item.id} >
+                    <div className="overview-card" >
                         <div className="overcard-left">
                             <GiCheckMark />
                             <p>Present</p>
@@ -34,7 +34,7 @@ const Overview = () => {
                     </div>
                     <div className="overview-card">
                         <div className="overcard-left">
-                            <LuPartyPopper/>
+                            <LuPartyPopper />
                             <p>Holiday</p>
                         </div>
                         <div className="overcard-right">
@@ -43,7 +43,7 @@ const Overview = () => {
                     </div>
                     <div className="overview-card">
                         <div className="overcard-left">
-                            <MdOutlineSick/>
+                            <MdOutlineSick />
                             <p>Leave</p>
                         </div>
                         <div className="overcard-right">
@@ -52,7 +52,7 @@ const Overview = () => {
                     </div>
                     <div className="overview-card">
                         <div className="overcard-left">
-                            <LuMessageSquareMore/>
+                            <LuMessageSquareMore />
                             <p>Request</p>
                         </div>
                         <div className="overcard-right">
@@ -61,7 +61,7 @@ const Overview = () => {
                     </div>
                     <div className="overview-card">
                         <div className="overcard-left">
-                            <GoTasklist/>
+                            <GoTasklist />
                             <p>Projects</p>
                         </div>
                         <div className="overcard-right">
@@ -70,16 +70,16 @@ const Overview = () => {
                     </div>
                     <div className="overview-card">
                         <div className="overcard-left">
-                            <BiTask/>
+                            <BiTask />
                             <p>Task</p>
                         </div>
                         <div className="overcard-right">
                             <p>{item.task}</p>
                         </div>
                     </div>
-                </>
+                </div>
             ))}
-        </div>
+        </>
     );
 };
 

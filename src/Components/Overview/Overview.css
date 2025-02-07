@@ -4,8 +4,8 @@
   gap: 1rem;
 }
 .overview-card {
-  background-color: #4c4a4a;
-  color: white;
+  background-color: #98D8EF;
+  color: black;
   border-radius: 8px;
   padding: 1rem;
   display: flex;
@@ -15,14 +15,15 @@
 
 .overcard-left p {
   margin: 0;
+  color: black;
 }
 .overcard-left svg {
   font-size: 25px;
 }
 .overcard-right p {
   margin: 0;
-  background-color: #787878;
-  color: white;
+  background-color: #E8F9FF;
+  color: black;
   display: flex;
   align-content: center;
   justify-content: center;

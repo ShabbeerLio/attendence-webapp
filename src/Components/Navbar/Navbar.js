@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css"
-import logo from "../../Assets/logo/logo-1500x400-white.png"
+import logo from "../../Assets/logo/logo-1500x400.png"
 import { FaRegCircleUser } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -11,9 +11,9 @@ const Navbar = () => {
             <div className="navbar-main">
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="#">
+                        <Link className="navbar-brand" to="/">
                             <img src={logo} alt="" />
-                        </a>
+                        </Link>
                         {/* <button
                             className="navbar-toggler"
                             type="button"
@@ -33,23 +33,23 @@ const Navbar = () => {
                                 <Link className="nav-link" to="/leave">
                                     Leave
                                 </Link>
-                                <Link className="nav-link" href="/attendence">
+                                <Link className="nav-link" to="/attendence">
                                     Attendence
                                 </Link>
-                                <Link className="nav-link" href="/more">
+                                <Link className="nav-link" to="/more">
                                     More
                                 </Link>
                             </div>
                         </div>
                         <div className="profile">
                             <div className="dropdown">
-                                <a className="btn " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Link className="btn " to="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                     <FaRegCircleUser />
-                                </a>
+                                </Link>
 
                                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><Link className="dropdown-item" href="/profile">Profile</Link></li>
-                                    <li><Link className="dropdown-item" href="#">Logout</Link></li>
+                                    <li><Link className="dropdown-item" to="/profile">Profile</Link></li>
+                                    <li><Link className="dropdown-item" to="/">Logout</Link></li>
                                 </ul>
                             </div>
                         </div>

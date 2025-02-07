@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body,
+#root {
+  height: 91vh;
+  margin: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-container {
+  flex: 1; /* Makes it take up remaining space */
+  overflow-y: auto; /* Enables scrolling */
+  -ms-overflow-style: none; /* Hide scrollbar in IE & Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  /* margin-top: 6rem; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari */
 }

@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
-  background-color: #4c4a4a;
-  color: white;
+  background-color: white;
+  color: black;
 }
 .navbar-main {
   width: 100%;
@@ -15,7 +15,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-  color: white !important;
+  color: black !important;
 }
 .navbar-light .navbar-nav .nav-link {
   color: rgb(212, 212, 212) !important;
@@ -23,7 +23,7 @@
 
 .profile svg {
   font-size: 25px;
-  color: white;
+  color: black;
 }
 .profile .btn {
   box-shadow: none;
@@ -33,7 +33,10 @@
   right: 0;
   left: auto !important;
   margin-top: 0.125rem;
-  background-color: #4c4a4a;
+  background-color: #525252;
+  color: white;
+}
+.dropdown-menu[data-bs-popper] a{
   color: white;
 }
 
