@@ -47,21 +47,22 @@
 }
 .timer-head h1 {
   font-size: 70px;
-  font-weight: 600;
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Lilita One", serif;
 }
 .timer-head h1 span {
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 35px;
+  font-weight: 100;
   color: gray;
   margin: 0 0.5rem;
 }
 .timer-head p {
-  font-weight: 500;
   color: gray;
   margin: 0 0.4rem;
+  font-family: "Lilita One", serif;
 }
 .timer-head p:first-child {
   margin-bottom: 2rem;
@@ -69,6 +70,7 @@
 .timer-date {
   text-align: center;
   color: black;
+  font-family: "Lilita One", serif;
 }
 
 .timer-button {
@@ -94,6 +96,7 @@
   padding: 2rem;
   cursor: pointer;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .timer-button p svg {
   font-size: 59px;
@@ -115,6 +118,7 @@
   border-radius: 50px;
   position: relative;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .timer-stopwatch span {

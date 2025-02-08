@@ -5,6 +5,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Pnav from "./Components/Navbar/Pnav";
 import Leave from "./Pages/Leave.js/Leave";
 import Attendence from "./Pages/Attendence/Attendence";
+import More from "./Pages/More/More";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/leave" exact element={<Leave />} />
           <Route path="/attendence" exact element={<Attendence />} />
+          <Route path="/more" exact element={<More />} />
         </Routes>
       </div>
       <Pnav />

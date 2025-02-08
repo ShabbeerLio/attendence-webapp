@@ -1,0 +1,23 @@
+.more-card ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0;
+}
+.more-card ul li{
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding-left: 10px;
+}
+.more-card ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 990px) {
+    .more-card ul {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+      }
+}
