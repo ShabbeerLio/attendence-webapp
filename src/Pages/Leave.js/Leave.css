@@ -161,6 +161,7 @@
 .lr-card-left h4 {
   margin: 0;
   color: black;
+  font-size: 18px;
 }
 
 .status {
@@ -175,15 +176,19 @@
   font-weight: 400;
 }
 
-.status.approved {
+.status.approved ,
+.status.present {
   background-color: green;
 }
 
-.status.rejected {
+.status.rejected ,
+.status.absent {
   background-color: red;
 }
 
-.status.pending {
+.status.pending ,
+.status.late ,
+.status.half {
   background-color: #525252;
 }
 

@@ -2,6 +2,7 @@ import React from "react";
 import "./Attendence.css";
 import LeaveData from "../Leave.js/LeaveData";
 import { Link } from "react-router-dom";
+import AttendenceData from "./AttendenceData";
 
 const Attendence = () => {
   return (
@@ -47,10 +48,10 @@ const Attendence = () => {
 
                             </div>
                             <div className="leave-right-details">
-                                {LeaveData.map((item) => (
+                                {AttendenceData.map((item) => (
                                     <div className="leave-right-card" key={item.id}>
                                         <div className="lr-card-left">
-                                            <h4>{item.type}</h4>
+                                            <h4>{item.date}</h4>
                                             <p
                                                 className={`status ${item.status.toLowerCase()}`}
                                             >
@@ -58,7 +59,11 @@ const Attendence = () => {
                                             </p>
                                         </div>
                                         <div className="lr-card-right">
-                                            <p>{item.start_time} - {item.end_time}</p>
+                                            <div className="attendence-card">
+                                            <p><span>Check In</span>{item.check_in}</p>
+                                            <p><span>Check Out</span>{item.check_out}</p>
+                                            <p><span>Total</span>{item.total_hours}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 ))}
