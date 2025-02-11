@@ -99,27 +99,24 @@
   border: 1px solid #e8f9ff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.rt-left {
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
+
 .rt-left p,
 .rt-right p {
   margin: 0;
   padding: 10px 12px;
   color: black;
+  cursor: pointer;
 }
 
-.rt-right {
+.rt-left.active,
+.rt-right.active {
   background-color: #98d8ef;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s ease-in-out;
 }
 
 .leave-right-filter {
@@ -182,18 +179,18 @@
   font-weight: 400;
 }
 
-.status.approved ,
+.status.approved,
 .status.present {
   background-color: green;
 }
 
-.status.rejected ,
+.status.rejected,
 .status.absent {
   background-color: red;
 }
 
-.status.pending ,
-.status.late ,
+.status.pending,
+.status.late,
 .status.half {
   background-color: #525252;
 }

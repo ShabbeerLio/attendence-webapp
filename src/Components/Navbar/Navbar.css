@@ -33,11 +33,10 @@
   right: 0;
   left: auto !important;
   margin-top: 0.125rem;
-  background-color: #525252;
-  color: white;
+  background-color: #ffffff;
 }
 .dropdown-menu[data-bs-popper] a{
-  color: white;
+  color: black;
 }
 
 @media screen and (min-width: 1200px) {
