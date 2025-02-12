@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
-import "./Leave.css"
+import "./Leave.css";
 import LeaveData from "./LeaveData";
 import { Link } from "react-router-dom";
 
 const Leave = () => {
-    const [filteredData, setFilteredData] = useState(LeaveData);
-    const [selectedFilter, setSelectedFilter] = useState("All");
+    const [filteredData, setFilteredData] = useState([]);
+    const [selectedFilter, setSelectedFilter] = useState("This Month");
     const [leaveType, setLeaveType] = useState("All");
     const [sickLeaveCount, setSickLeaveCount] = useState(0);
     const [urgentLeaveCount, setUrgentLeaveCount] = useState(0);
 
-    // Function to count the number of specific leave types
     useEffect(() => {
         const currentDate = new Date();
 
@@ -22,11 +21,20 @@ const Leave = () => {
             );
         });
 
-        const sickLeaves = currentMonthLeaves.filter((leave) => leave.type === "Sick Leave" && leave.status === "Approved").length;
-        const urgentLeaves = currentMonthLeaves.filter((leave) => leave.type === "Emergency Leave" && leave.status === "Approved").length;
+        const sickLeaves = currentMonthLeaves.filter(
+            (leave) => leave.type === "Sick Leave" && leave.status === "Approved"
+        ).length;
+
+        const urgentLeaves = currentMonthLeaves.filter(
+            (leave) => leave.type === "Emergency Leave" && leave.status === "Approved"
+        ).length;
 
         setSickLeaveCount(sickLeaves);
         setUrgentLeaveCount(urgentLeaves);
+    }, []);
+
+    useEffect(() => {
+        filterLeaveData("This Month", "All"); // Set default filter on mount
     }, []);
 
     const parseDate = (dateString) => {
@@ -54,9 +62,11 @@ const Leave = () => {
                 return leaveDate.getFullYear() === currentDate.getFullYear();
             });
         }
+
         if (typeFilter !== "All") {
             filtered = filtered.filter((item) => item.status === typeFilter);
         }
+
         setFilteredData(filtered);
     };
 
@@ -70,7 +80,6 @@ const Leave = () => {
         setLeaveType(type);
         filterLeaveData(selectedFilter, type);
     };
-
 
     return (
         <div className="Leave">
@@ -113,14 +122,14 @@ const Leave = () => {
                                 <h4>Filter</h4>
 
                                 <div className="dropdown">
-                                    <p class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <p className="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                         {leaveType === "All" ? "Select Type" : leaveType}
                                     </p>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li onClick={() => handleLeaveTypeFilter("All")}><Link class="dropdown-item" href="#">All</Link></li>
-                                        <li onClick={() => handleLeaveTypeFilter("Approved")}> <Link class="dropdown-item" href="#">Approved</Link> </li>
-                                        <li onClick={() => handleLeaveTypeFilter("Rejected")}><Link class="dropdown-item" href="#">Rejected</Link></li>
-                                        <li onClick={() => handleLeaveTypeFilter("Pending")}><Link class="dropdown-item" href="#">Pending</Link></li>
+                                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li onClick={() => handleLeaveTypeFilter("All")}><Link className="dropdown-item" to="#">All</Link></li>
+                                        <li onClick={() => handleLeaveTypeFilter("Approved")}><Link className="dropdown-item" to="#">Approved</Link></li>
+                                        <li onClick={() => handleLeaveTypeFilter("Rejected")}><Link className="dropdown-item" to="#">Rejected</Link></li>
+                                        <li onClick={() => handleLeaveTypeFilter("Pending")}><Link className="dropdown-item" to="#">Pending</Link></li>
                                     </ul>
                                 </div>
                             </div>

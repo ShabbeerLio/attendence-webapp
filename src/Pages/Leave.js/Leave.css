@@ -180,7 +180,8 @@
 }
 
 .status.approved,
-.status.present {
+.status.present,
+.status.holiday {
   background-color: green;
 }
 
