@@ -1,0 +1,19 @@
+.Calender {
+  width: 100%;
+  height: 85%;
+}
+
+.Calender-main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .Calender-main {
+    max-width: 1080px;
+  }
+}

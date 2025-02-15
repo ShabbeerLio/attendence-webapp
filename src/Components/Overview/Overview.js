@@ -5,6 +5,7 @@ import { LuPartyPopper, LuMessageSquareMore } from "react-icons/lu";
 import { MdOutlineSick } from "react-icons/md";
 import { GoTasklist } from "react-icons/go";
 import { BiTask } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Overview = () => {
     const OverviewData = [
@@ -23,7 +24,7 @@ const Overview = () => {
         <>
             {OverviewData.map((item) => (
                 <div className="Overview" key={item.id} >
-                    <div className="overview-card" >
+                    <Link to={"/attendence"} className="overview-card" >
                         <div className="overcard-left">
                             <GiCheckMark />
                             <p>Present</p>
@@ -31,8 +32,8 @@ const Overview = () => {
                         <div className="overcard-right">
                             <p>{item.present}</p>
                         </div>
-                    </div>
-                    <div className="overview-card">
+                    </Link>
+                    <Link to={"/calender"} className="overview-card">
                         <div className="overcard-left">
                             <LuPartyPopper />
                             <p>Holiday</p>
@@ -40,8 +41,8 @@ const Overview = () => {
                         <div className="overcard-right">
                             <p>{item.holiday}</p>
                         </div>
-                    </div>
-                    <div className="overview-card">
+                    </Link>
+                    <Link to={"/leave"} className="overview-card">
                         <div className="overcard-left">
                             <MdOutlineSick />
                             <p>Leave</p>
@@ -49,8 +50,8 @@ const Overview = () => {
                         <div className="overcard-right">
                             <p>{item.leave}</p>
                         </div>
-                    </div>
-                    <div className="overview-card">
+                    </Link>
+                    <Link to={""} className="overview-card">
                         <div className="overcard-left">
                             <LuMessageSquareMore />
                             <p>Request</p>
@@ -58,8 +59,8 @@ const Overview = () => {
                         <div className="overcard-right">
                             <p>{item.request}</p>
                         </div>
-                    </div>
-                    <div className="overview-card">
+                    </Link>
+                    <Link to={"/projects"} className="overview-card">
                         <div className="overcard-left">
                             <GoTasklist />
                             <p>Projects</p>
@@ -67,8 +68,8 @@ const Overview = () => {
                         <div className="overcard-right">
                             <p>{item.projects}</p>
                         </div>
-                    </div>
-                    <div className="overview-card">
+                    </Link>
+                    <Link to={"/task"} className="overview-card">
                         <div className="overcard-left">
                             <BiTask />
                             <p>Task</p>
@@ -76,7 +77,7 @@ const Overview = () => {
                         <div className="overcard-right">
                             <p>{item.task}</p>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             ))}
         </>

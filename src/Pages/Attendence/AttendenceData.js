@@ -10,7 +10,7 @@ const AttendenceData = [
   {
     id: 2,
     date: "Sun 9 Feb 2025",
-    status: "Holiday",
+    status: "WeekOff",
     check_in: "--",
     check_out: "--",
     total_hours: "--",

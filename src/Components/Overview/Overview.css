@@ -3,8 +3,9 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+
 .overview-card {
-  background-color: #98D8EF;
+  background-color: #98d8ef;
   color: black;
   border-radius: 8px;
   padding: 1rem;
@@ -12,18 +13,22 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-decoration: none;
 }
 
 .overcard-left p {
   margin: 0;
   color: black;
 }
+
 .overcard-left svg {
   font-size: 25px;
+  color: black;
 }
+
 .overcard-right p {
   margin: 0;
-  background-color: #E8F9FF;
+  background-color: #e8f9ff;
   color: black;
   display: flex;
   align-content: center;

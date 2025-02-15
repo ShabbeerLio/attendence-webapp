@@ -6,6 +6,8 @@ import Pnav from "./Components/Navbar/Pnav";
 import Leave from "./Pages/Leave.js/Leave";
 import Attendence from "./Pages/Attendence/Attendence";
 import More from "./Pages/More/More";
+import Calender from "./Pages/Calender/Calender";
+import FolderImageUploader from "./Pages/ExamplePage";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/leave" exact element={<Leave />} />
           <Route path="/attendence" exact element={<Attendence />} />
           <Route path="/more" exact element={<More />} />
+          <Route path="/calender" exact element={<Calender />} />
+          <Route path="/example" exact element={<FolderImageUploader />} />
         </Routes>
       </div>
       <Pnav />

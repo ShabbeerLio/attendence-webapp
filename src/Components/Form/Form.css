@@ -1,0 +1,63 @@
+form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+form label select,
+form label textarea,
+form label input {
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+form label p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.form-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.form-button button {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #98d8ef;
+  border: none;
+  width: 100%;
+}
+.form-button button:nth-child(1) {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+.multi-day-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.multi-day-checkbox p {
+  margin: 0;
+  margin-left: 1rem;
+}
+.multi-day-checkbox input{
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+}
